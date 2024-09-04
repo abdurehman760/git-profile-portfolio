@@ -239,6 +239,7 @@ interface Education {
   degree?: string;
   from: string;
   to: string;
+  cgpa?: string;
 }
 
 interface Publication {

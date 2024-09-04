@@ -3,11 +3,13 @@ import { LOCAL_STORAGE_KEY_NAME } from '../constants';
 import { DEFAULT_CUSTOM_THEME } from '../constants/default-custom-theme';
 import { DEFAULT_THEMES } from '../constants/default-themes';
 import colors from '../data/colors.json';
+import { SanitizedEducation } from '../interfaces/sanitized-config';
 import {
   SanitizedConfig,
   SanitizedHotjar,
   SanitizedThemeConfig,
 } from '../interfaces/sanitized-config';
+
 
 export const isDarkishTheme = (appliedTheme: string): boolean => {
   return ['dark', 'halloween', 'forest', 'black', 'luxury', 'dracula'].includes(
@@ -99,10 +101,13 @@ export const getSanitizedConfig = (
           (certification) =>
             certification.year || certification.name || certification.body,
         ) || [],
-      educations:
-        config?.educations?.filter(
-          (item) => item.institution || item.degree || item.from || item.to,
-        ) || [],
+        educations: (config?.educations ?? []).map(item => ({
+          institution: item.institution ?? '', // Ensure default value is provided
+          degree: item.degree ?? '',
+          from: item.from ?? '',
+          to: item.to ?? '',
+          cgpa: item.cgpa ?? '',
+        })) as SanitizedEducation[], // Cast to SanitizedEducation[] if needed
       publications: config?.publications?.filter((item) => item.title) || [],
       googleAnalytics: {
         id: config?.googleAnalytics?.id,

@@ -193,14 +193,12 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Abdur Rahman',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'Abdur-Rahman',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -210,34 +208,31 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: 'www.abdurrahmanportfoliosite.com',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'Abdurehmankhan760@gmail.com',
   },
   resume: {
     fileUrl:
       'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+
     'JavaScript',
     'React.js',
     'Node.js',
-    'Nest.js',
     'MySQL',
-    'PostgreSQL',
+    'SQlite',
+    'Mongodb',
     'Git',
-    'Docker',
-    'PHPUnit',
     'CSS',
-    'Antd',
     'Tailwind',
+    'Bootstrap',
   ],
   experiences: [
     {
@@ -300,7 +295,7 @@ const CONFIG = {
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: 'Abdur-Rahman ', // to hide blog section, keep it empty
     limit: 3, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -376,7 +371,7 @@ const CONFIG = {
 
   // Optional Footer. Supports plain text or HTML.
   footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
+      class="text-primary" href="https://github.com/abdurehman760/git-profile-portfolio"
       target="_blank"
       rel="noreferrer"
     >GitProfile</a> and ❤️`,
@@ -405,7 +400,7 @@ const CONFIG = {
 ```
 
 <p align="center">
-  <img src="https://github.com/arifszn/gitprofile/assets/45073703/91a2d9e6-67e5-47b4-9752-1881ac0f907f" alt="Theme Dropdown" width="50%">
+  <img src="https://i.postimg.cc/2y3kvr6j/Screenshot-13.png" alt="Theme Dropdown" width="50%">
 </p>
 
 You can create your own custom theme by modifying these values. Theme `procyon` will have the custom styles.
@@ -489,7 +484,7 @@ const CONFIG = {
 
 GitProfile is PWA enabled. The site can be installed as a Progressive Web App. To turn it off, set `enablePWA` to `false`.
 
-![PWA](https://github.com/arifszn/gitprofile/assets/45073703/9dc7cc5c-4262-4445-a7a5-1e3566ef43fa)
+![PWA](https://i.postimg.cc/V6tQcvdC/239755071-9dc7cc5c-4262-4445-a7a5-1e3566ef43fa.png)
 
 ### Avatar and Bio
 
@@ -504,9 +499,9 @@ You can link your social media services you're using, including LinkedIn, Twitte
 const CONFIG = {
   // ...
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: '',
+    twitter: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -523,7 +518,7 @@ const CONFIG = {
     telegram: '',
     website: '',
     phone: '',
-    email: '',
+    email: 'Abdurehmankhan760@gmail.com',
   },
 };
 ```
@@ -640,12 +635,12 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: [], // These projects will not be displayed. example: ['abdurrahman760/my-project1', 'abdurrahman/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['abdurrahman760/gitprofile', 'abdurrahman760/pandora'], // List of repository names to display. example: ['abdurrahman760/my-project1', 'abdurrahman760/my-project2']
       },
     },
   },
@@ -663,7 +658,7 @@ const CONFIG = {
   // ...
   projects: {
     external: {
-      header: 'My Projects',
+      header: 'Recent & Live Favorite Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
@@ -722,27 +717,27 @@ const CONFIG = {
   // ...
   blog: {
     source: 'dev',
-    username: 'arifszn',
+    username: 'abdurrahman760',
     limit: 5,
   },
 };
 ```
 
-![Blog](https://github.com/arifszn/gitprofile/assets/45073703/410124f2-a3c2-48f1-8ec8-0c6fae74ae3d)
+![Blog](https://github.com/abdurehman760/git-profile-portfolio/assets/45073703/410124f2-a3c2-48f1-8ec8-0c6fae74ae3d)
 
 The posts are fetched by [blog.js](https://github.com/arifszn/blog.js).
 
 ## 💖 Support
 
 <p>You can show your support by starring this project. ★</p>
-<a href="https://github.com/arifszn/gitprofile/stargazers">
+<a href="https://github.com/abdurehman760/git-profile-portfolio/stargazers">
   <img src="https://img.shields.io/github/stars/arifszn/gitprofile?style=social" alt="Github Star">
 </a>
 
 ## 💡 Contribute
 
-To contribute, see the [Contributing guide](https://github.com/arifszn/gitprofile/blob/main/CONTRIBUTING.md).
+To contribute, see the [Contributing guide](https://github.com/abdurehman760/git-profile-portfolio/blob/main/CONTRIBUTING.md).
 
 ## 📄 License
 
-[MIT](https://github.com/arifszn/gitprofile/blob/main/LICENSE)
+[MIT](https://github.com/abdurehman760/git-profile-portfolio/blob/main/LICENSE)

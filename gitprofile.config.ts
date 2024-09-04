@@ -9,7 +9,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Github Projects ( Synced from GitHub )',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'updated', // Sort projects by 'stars' or 'updated'
@@ -25,30 +25,38 @@ const CONFIG = {
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Recent & Live Favorite Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          "title": "GitProfile - Portfolio Site",
+          "description": "GitProfile is an intuitive, automatic portfolio builder for GitHub users, allowing you to create a personalized portfolio effortlessly. Just enter your GitHub username, and GitProfile generates a beautiful portfolio site with your projects, skills, and more. With over 33 themes, built-in SEO, and PWA support, GitProfile ensures your portfolio is polished and professional. Google Analytics integration is included to help track user interactions and provide insights into how visitors engage with your portfolio. Easily deploy your site to GitHub Pages in minutes, and start showcasing your work to the world.",
+          "imageUrl": "https://i.postimg.cc/JzFxCcfw/08dbb2a8-0778-4913-96c4-0a9c28854a60.jpg",
+          "link": "https://github.com/abdurehman760/git-profile-portfolio",
+          "liveDemoLink": "https://abdurrahman-git-profile-portfolio.netlify.app/"
+        }
+        
+        ,
+        {
+          "title": "Currency Converter App",
+          "description": "The Currency Converter App is a modern React-based application designed for fast and accurate currency conversion. It allows users to search for and select currencies from an extensive list with ease. The app is optimized for both desktop and mobile use, offering a super quick and responsive experience. It features real-time exchange rates and formats input values into thousands, millions, billions, etc., for easy reading and counting, with the same formatting applied to the output value. Perfect for anyone needing reliable currency conversion on the go.",
+          "imageUrl": "https://i.postimg.cc/dtpMftkC/craiyon-001041-sleek-finance-app-logo-on-a-vibrant-blue-background.png",
+          "link": "https://github.com/abdurehman760/currency-converter-real-time",
+          "liveDemoLink": "https://currency-converter-real-time.netlify.app/"
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
+          "title": "JavaScript Quiz Game 🎓",
+          "description": "A single-page web application built using only HTML, CSS, and JavaScript to test and enhance your knowledge through interactive quizzes. Select between basic and advanced quizzes, receive real-time feedback, and view detailed results. Features include dynamic quiz selection, interactive interface, timer functionality, detailed results, responsive design, and access to previous records.",
+          "imageUrl": "https://i.postimg.cc/PJ0bs6wP/RDRFO0-Icm-Hkujr-Oj-TN1o-1-bp7k4.jpg",  // Replace with actual image URL for the quiz game
+          "link": "https://github.com/abdurehman760/javascript-quiz-game",
+          "liveDemoLink": "https://javascript-quiz-game-for-learners.netlify.app/"
+        }
+
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Abdur Rahman',
     description: '',
     imageURL: '',
   },
@@ -60,28 +68,28 @@ const CONFIG = {
 
     phone: '+92-3029437934',
     email: 'Abdurehmankhan760@gmail.com',
-    telegram: 'abdurrahman2232' // Example link for Fiverr
+    telegram: 'abdurrahman2232' // Example link for Fiverr... 
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://drive.google.com/uc?export=download&id=1LQ5U5I_gK0udPcUCMaenG86_5bwkAAT5',
   },
+  
   skills: [
-    'HTML',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Express.js',
-    'Mongodb',
-    'MySQL',
-    'SQLite',
-    'Flask',
-    'Git',
-    'CSS',
-    'Bootstrap',
-    'Tailwind',
-    'English',
-    'German'
+    'HTML',                   // Tech
+  'JavaScript',             // Tech
+  'React.js',               // Tech
+  'Node.js',                // Tech
+  'Express.js',             // Tech
+  'MongoDB',                // Tech
+  'MySQL',                  // Tech
+  'SQLite',                 // Tech
+  'Flask',                  // Tech
+  'Git',                    // Tech
+  'CSS',                    // Tech
+  'Bootstrap',              // Tech
+  'Tailwind',               // Tech
+  'English (language)',     // Non-tech
+  'German (language)'       // Non-tech
   ],
   experiences: [
     {
@@ -158,13 +166,9 @@ const CONFIG = {
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-07ZKN96EE3', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
-  hotjar: {
-    id: '',
-    snippetVersion: 6,
-  },
+  
   themeConfig: {
     defaultTheme: 'synthwave',
 

@@ -68,13 +68,12 @@ const ExternalProjectCard = ({
 
   const renderExternalProjects = () => {
     return externalProjects.map((item, index) => (
-      <a
+      <div
         className="card shadow-lg compact bg-base-100 cursor-pointer"
         key={index}
-        href={item.link}
         onClick={(e) => {
-          e.preventDefault();
-
+          e.preventDefault(); // Prevent the default action of the card click
+  
           try {
             if (googleAnalyticId) {
               ga.event('Click External Project', {
@@ -84,7 +83,8 @@ const ExternalProjectCard = ({
           } catch (error) {
             console.error(error);
           }
-
+  
+          // Open the GitHub link when the card is clicked
           window?.open(item.link, '_blank');
         }}
       >
@@ -114,15 +114,27 @@ const ExternalProjectCard = ({
                   <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
                     {item.description}
                   </p>
+                  {/* Add Live Demo Link here */}
+                  {item.liveDemoLink && (
+                    <a
+                      href={item.liveDemoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline mt-2 block"
+                      onClick={(e) => e.stopPropagation()} // Stop event propagation
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     ));
   };
-
+  
   return (
     <Fragment>
       <div className="col-span-1 lg:col-span-2">

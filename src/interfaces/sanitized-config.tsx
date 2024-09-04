@@ -24,6 +24,7 @@ export interface SanitizedExternalProject {
   description?: string;
   imageUrl?: string;
   link: string;
+  liveDemoLink?: string;  // Add this line
 }
 
 export interface SanitizedExternalProjects {
@@ -92,14 +93,15 @@ export interface SanitizedCertification {
   link?: string;
 }
 
+// src/interfaces/sanitized-config.tsx
 export interface SanitizedEducation {
   institution: string;
   degree: string;
   from: string;
   to: string;
-  cgpa?: string; 
-  
+  cgpa?: string; // Optional
 }
+
 
 
 export interface SanitizedPublication {
