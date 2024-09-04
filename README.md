@@ -22,11 +22,11 @@
   </p>
 
   <p align="center">
-    <a href="https://arifszn.github.io/gitprofile">View Demo</a>
+    <a href="https://abdurrahman-git-profile-portfolio.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/arifszn/gitprofile/issues">Report Bug</a>
+    <a href="https://github.com/abdurehman760/git-profile-portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/arifszn/gitprofile/discussions">Request Feature</a>
+    <a href="https://github.com/abdurehman760/git-profile-portfolio/discussions">Request Feature</a>
   </p>
 </p>
 
@@ -58,11 +58,8 @@
 ✓ [Publication Section](#publications)  
 ✓ [Blog Posts Section](#blog-posts)
 
-To view a live example, **[click here](https://arifszn.github.io/gitprofile)**.
+To view a live example, **[click here](https://abdurrahman-git-profile-portfolio.netlify.app/)**.
 
-<p align="center">
-  <img src="https://github.com/arifszn/gitprofile/assets/45073703/406e8368-415a-42ef-89c5-d43cc8bbeb19" alt="Themes">
-</p>
 
 ## 🛠 Installation & Setup
 
@@ -97,7 +94,7 @@ These instructions will get you a copy of the project and deploy your portfolio 
   }
   ```
 
-- **Commit the changes:** Now commit to your **main** branch with your changes. Wait a few minutes so that the CI/CD pipeline can publish your website to GitHub Pages. You can check the progress in the [Actions](https://github.com/arifszn/gitprofile/actions) tab.
+- **Commit the changes:** Now commit to your **main** branch with your changes. Wait a few minutes so that the CI/CD pipeline can publish your website to GitHub Pages. You can check the progress in the [Actions](https://github.com/abdurehman760/git-profile-portfolio/actions) tab.
 
 Your portfolio website will be live shortly. Any time you commit a change to the **main** branch, the website will be automatically updated. If you face any issue viewing the website, double-check the `base` value in the `gitprofile.config.ts` file. Also, check if **Source** is set to **GitHub Actions** in **Settings** ➜ **Pages** ➜ **Build and deployment**.
 
@@ -105,14 +102,14 @@ If you wish to add a custom domain, no CNAME file is required. Just add it to yo
 
 As this is a Vite project, you can also host your website to Netlify, Vercel, Heroku, or other popular services. Please refer to this [doc](https://vitejs.dev/guide/static-deploy.html) for a detailed deployment guide to other services.
 
-[**Not working?**](https://github.com/arifszn/gitprofile/discussions/548)
+
 
 ### Setting up locally
 
 - Clone the project and change directory.
 
   ```shell
-  git clone https://github.com/arifszn/gitprofile.git
+  git clone https://github.com/abdurehman760/git-profile-portfolio.git
   cd gitprofile
   ```
 
@@ -130,7 +127,6 @@ As this is a Vite project, you can also host your website to Netlify, Vercel, He
 
 - Finally, visit `http://localhost:5173/gitprofile/` from your browser.
 
-> Alternatively, you can set up and run the project using Docker with **[Vail](https://github.com/arifszn/vail)**, a powerful tool for local development of JavaScript/TypeScript Apps.
 
 ## 🎨 Customization
 
@@ -143,12 +139,12 @@ You can leave most of the sections empty if you don't want to display them on yo
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'abdurehman760', // Your GitHub org/user name. (This is the only required config)
   },
   /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
+   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/abdurehman760/abdurehman760.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
+   * for example your repository is at https://github.com/abdurehman760/portfolio, then set base to '/portfolio/'.
    */
   base: '/gitprofile/',
   projects: {
@@ -166,7 +162,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['abdurehman760/gitprofile', 'abdurehman760/surveyhub'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
